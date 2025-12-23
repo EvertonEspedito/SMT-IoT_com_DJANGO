@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoramento de Temperatura</title>
+
+    <link rel="stylesheet" href="{% static 'sensores/css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>🌡️ Monitoramento de Temperatura - Pico W</h1>
+</header>
+
+<div class="container">
+
+    <div class="info">
+        <div class="card">
+            <h2>Atual</h2>
+            <span id="tempAtual">-- °C</span>
+        </div>
+        <div class="card">
+            <h2>Máxima</h2>
+            <span id="tempMax">-- °C</span>
+        </div>
+        <div class="card">
+            <h2>Mínima</h2>
+            <span id="tempMin">-- °C</span>
+        </div>
+    </div>
+
+    <canvas id="graficoTemperatura"></canvas>
+
+</div>
+
+<script src="{% static 'sensores/js/grafico.js' %}"></script>
+</body>
+</html>
