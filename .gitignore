@@ -33,3 +33,7 @@ build/
 *.swp
 *.swo
 *.bak
+
+# Documentos do projeto
+DOC_PROJETO.odt
+SIMoTI - Escrita.odt
